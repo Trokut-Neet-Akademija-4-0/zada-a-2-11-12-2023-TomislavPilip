@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url(tennis.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      table {
+        max-width: 991px;
+        max-height: 900px;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0 auto;
+      }
+      td {
+        background-color: rgb(19, 108, 19, 0.5);
+        width: 100%;
+        height: 100%;
+      }
+      @font-face {
+        font-family: JosefinSans;
+        src: url(JosefinSans-Regular.ttf);
+      }
+      header {
+        height: 110px;
+        background-color: rgb(8, 8, 82);
+      }
+      footer {
+        background-color: rgb(8, 8, 82);
+        height: 150px;
+        margin-top: 20px;
+        box-sizing: border-box;
+      }
+      .logo,
+      .links,
+      .search {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .logo {
+        max-width: 180px;
+        margin-left: 10px;
+      }
+      .links {
+        max-width: 600px;
+        padding-top: 40px;
+        padding-right: 60px;
+        padding-bottom: 50px;
+        padding-left: 60px;
+        margin-right: 20px;
+      }
+      .search {
+        margin-bottom: 10px;
+        background-color: rgb(13, 13, 65);
+      }
+      header a {
+        color: white;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+        border-right: 1px solid white;
+        transition: 1.5s;
+        font-family: JosefinSans;
+        font-size: 18px;
+      }
+      header a:hover {
+        color: yellow;
+        cursor: pointer;
+      }
+      #search_bar {
+        padding: 15px;
+        border-radius: 20px;
+        margin-right: -38px;
+        transition: 1.5s;
+      }
+
+      #button_icon {
+        padding: 10px;
+        border-radius: 20px;
+        margin-right: 20px;
+        border: none;
+        color: black;
+        background-color: white;
+        transition: 1.5s;
+      }
+      #button_icon:hover {
+        cursor: pointer;
+        color: rgb(170, 170, 11);
+      }
+      td p {
+        text-align: center;
+      }
+      .image {
+        margin-left: 40px;
+        margin-top: 15px;
+      }
+      .image img {
+        border: 1px solid grey;
+        border-radius: 20px;
+        display: block;
+      }
+      .right {
+        width: 50vw;
+        height: auto;
+        text-align: center;
+        vertical-align: top;
+        color: white;
+        height: auto;
+        overflow: hidden;
+      }
+      .left {
+        width: 50vw;
+        height: auto;
+        line-height: 1.5em;
+        overflow: hidden;
+        vertical-align: top;
+        text-align: center;
+      }
+      input {
+        padding: 8px;
+        border-radius: 10px;
+      }
+      a:visited {
+        text-decoration: none;
+        color: aliceblue;
+      }
+
+      .footer_1 {
+        display: block;
+
+        background: #018141;
+        padding: 30px;
+        color: hsla(0, 0%, 100%, 0.8);
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1rem;
+      }
+      .footer_2 {
+        text-align: center;
+        padding: 10px;
+      }
+      .footer_2 img {
+        width: 30px;
+        height: 30px;
+        margin: 10px;
+        transition: 2s;
+      }
+      .footer_2 img:hover {
+        opacity: 0.4;
+      }
+      button {
+        padding: 12px;
+        border-radius: 10px;
+        transition: box-shadow, background-color, color 1.5s;
+      }
+      button:hover {
+        box-shadow: 2px 2px 10px yellow;
+      }
+      button:active {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div style="max-width: 991px; margin: 0 auto">
+          <div class="logo">
+            <img
+              style="width: 120; height: 120px"
+              src="modern-tennis-club-sports-logo-vector.png"
+              alt=""
+            />
+          </div>
+          <div class="links">
+            <a href="TENNIS_SHOP_PROJECT.html">Naslovna</a>
+            <a href="TENNISSHOPONAMA.html">O nama</a>
+            <a href="">Galerija</a>
+            <a href="">Usluge</a>
+            <a href="TENNISHOPKONTAKTI.html">Kontakti</a>
+          </div>
+          <div class="search">
+            <input type="search" placeholder="Pretraži*" id="search_bar" />
+            <button id="button_icon" type="submit">
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <table>
+        <tr>
+          <td class="left">
+            <form action="/slanje.php" method="post">
+              <fieldset class="field">
+                <legend>Rezerviranje termina</legend>
+                <p>Vaše informacije</p>
+
+                <label for="ime">Ime:</label>
+                <input
+                  type="text"
+                  name="userinfo"
+                  id="ime"
+                  placeholder="Ime*"
+                /><br />
+                <label for="prezime">Prezime:</label>
+                <input
+                  type="text"
+                  name="userinfo"
+                  id="prezime"
+                  placeholder="Prezime*"
+                /><br />
+                <label for="email">E-mail:</label>
+                <input
+                  type="email"
+                  name="userinfo"
+                  id="email"
+                  placeholder="anteantić@gmail.com*"
+                /><br />
+                <label for="tel">Telefon:</label>
+                <input
+                  type="tel"
+                  name="userinfo"
+                  id="tel"
+                  placeholder="099/769-1023*"
+                /><br />
+                <label for="adress">Adresa:</label>
+                <input
+                  type="text"
+                  name="userinfo"
+                  id="adress"
+                  placeholder="Šibenska ulica 77*"
+                /><br />
+                <br />
+                <label for="vrijeme">Vrijeme</label>
+                <input
+                  type="datetime-local"
+                  name="vrijeme"
+                  id="vrijeme"
+                /><br /><br />
+                <label for="comment">Komentar:</label><br />
+                <textarea
+                  name=""
+                  id="comment"
+                  cols="50"
+                  rows="15"
+                  placeholder=""
+                  maxlength="500"
+                ></textarea>
+              </fieldset>
+              <p class="submit">
+                <button type="submit">Rezerviraj</button>
+                <button type="reset">Reset</button>
+              </p>
+            </form>
+          </td>
+          <td class="right">
+            <div class="image">
+              <img
+                src="https://visitumag.croatia.hr/thumbnail.aspx?filename=/cmsmedia/Umag_Tennis_Academy_Colours_of_Istria.jpg&width=960&height=740&trim=1&save=1&quality=80"
+                alt="Teniska akademija"
+                width="410"
+                height="280"
+              />
+            </div>
+            <h4>Kontaktirajte nas:</h4>
+            <div
+              style="
+                padding: 10px;
+                background-color: rgb(1, 126, 1, 0.5);
+                color: aliceblue;
+              "
+            >
+              <label for="">E-Mail:</label>
+              <a
+                style="text-decoration: none; color: aliceblue"
+                href="mailto:teniskakademija@gmail.com"
+                >teniskakademija@gmail.com</a
+              >
+            </div>
+            <div
+              style="
+                padding: 10px;
+                background-color: rgb(1, 126, 1, 0.5);
+                color: aliceblue;
+              "
+            >
+              <label for="">Telefon 1:</label>
+              <a
+                style="text-decoration: none; color: aliceblue"
+                href="tel:022/768-876"
+                >022/768-876</a
+              >
+            </div>
+            <div
+              style="
+                padding: 10px;
+                background-color: rgb(1, 126, 1, 0.5);
+                color: aliceblue;
+              "
+            >
+              <label for="">Telefon 2:</label>
+              <a
+                style="text-decoration: none; color: aliceblue"
+                href="tel:022/543-322"
+                >022/543-322</a
+              >
+            </div>
+          </td>
+        </tr>
+      </table>
+    </main>
+    <footer>
+      <div class="footer_2">
+        <a href="" target="_blank"
+          ><img src="facebook-color-svgrepo-com (1).svg" alt=""
+        /></a>
+
+        <a href="" target="_blank"
+          ><img src="instagram-1-svgrepo-com.svg" alt=""
+        /></a>
+        <a href="" target="_blank"
+          ><img src="twitter-color-svgrepo-com.svg" alt=""
+        /></a>
+        <a href="" target="_blank"
+          ><img src="youtube-color-svgrepo-com.svg" alt=""
+        /></a>
+      </div>
+      <div class="footer_1">All rights reserved.© 2023</div>
+    </footer>
+  </body>
+</html>

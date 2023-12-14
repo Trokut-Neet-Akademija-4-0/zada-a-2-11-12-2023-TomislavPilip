@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header {
+        margin: 0 auto;
+        max-width: 991px;
+      }
+      body {
+        margin: 0; /* Remove default margin */
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+        padding: 16px;
+        background-color: rgb(29, 97, 29);
+        margin: 0; /* Remove default margin */
+      }
+
+      li {
+        margin-right: 20px; /* Adjust spacing between menu items */
+      }
+
+      a {
+        color: white;
+        text-align: center;
+        padding: 16px 16px;
+        text-decoration: none;
+        transition: background-color 0.5s;
+        border-right: 1px solid white;
+      }
+
+      a:last-child {
+        border-right: none; /* Remove the border on the last link */
+      }
+
+      a:hover {
+        background-color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a class="home" href="#">Home</a>
+          </li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>

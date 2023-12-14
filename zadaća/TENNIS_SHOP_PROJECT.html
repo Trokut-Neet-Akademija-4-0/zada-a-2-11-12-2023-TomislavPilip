@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tennis shop</title>
+    <style>
+      body {
+        background-image: url(tennis.jpg);
+        background-size: cover;
+      }
+
+      footer {
+        background-color: rgb(8, 8, 82);
+        height: 150px;
+        margin-top: 20px;
+        box-sizing: border-box;
+      }
+      @font-face {
+        font-family: JosefinSans;
+        src: url(JosefinSans-Regular.ttf);
+      }
+      @font-face {
+        font-family: WhisperRegular;
+        src: url(Whisper-Regular.ttf);
+      }
+
+      header {
+        height: 110px;
+        background-color: rgb(8, 8, 82);
+      }
+      .naslov {
+        border: 40px solid rgb(28, 122, 42, 0.7);
+        border-radius: 20px;
+        text-align: center;
+        height: 150px;
+        font-family: WhisperRegular;
+        padding-top: 15px;
+        padding-bottom: 25px;
+        font-size: 50px;
+        color: aliceblue;
+        margin-bottom: 5px;
+      }
+      .logo,
+      .links,
+      .search {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .logo {
+        max-width: 180px;
+        margin-left: 10px;
+      }
+      .links {
+        max-width: 600px;
+        padding-top: 40px;
+        padding-right: 60px;
+        padding-bottom: 50px;
+        padding-left: 60px;
+        margin-right: 20px;
+      }
+      .search {
+        margin-bottom: 10px;
+        background-color: rgb(13, 13, 65);
+      }
+      header a {
+        color: white;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+        border-right: 1px solid white;
+        transition: 1.5s;
+        font-family: JosefinSans;
+        font-size: 18px;
+      }
+      header a:hover {
+        color: yellow;
+        cursor: pointer;
+      }
+      #search_bar {
+        padding: 15px;
+        border-radius: 20px;
+        margin-right: -38px;
+        transition: 1.5s;
+      }
+
+      #button_icon {
+        padding: 10px;
+        border-radius: 20px;
+        margin-right: 20px;
+        border: none;
+        color: black;
+        background-color: white;
+        transition: 1.5s;
+      }
+      #button_icon:hover {
+        cursor: pointer;
+        color: rgb(170, 170, 11);
+      }
+      .container {
+        vertical-align: sub;
+      }
+      .img1 {
+        padding: 15px;
+        display: inline-block;
+        border: 1px solid grey;
+        border-radius: 20px;
+        width: 400px;
+        height: 350px;
+        background-color: rgb(28, 122, 42);
+        box-sizing: border-box;
+        margin-right: 20px;
+        margin-left: 75px;
+        vertical-align: top;
+        transition: opacity 2s;
+      }
+      .img1:hover {
+        opacity: 0.8;
+        filter: brightness(1.2);
+      }
+
+      .img1 figure {
+        margin: 0 auto;
+      }
+      main {
+        margin-top: 40px;
+      }
+      main a {
+        text-decoration: none;
+        color: white;
+        transition: font-size, opacity 2s;
+      }
+      main a:hover {
+        opacity: 0.6;
+        color: rgb(255, 255, 0);
+        font-size: 18px;
+      }
+      .img2 {
+        padding: 15px;
+        display: inline-block;
+        border: 1px solid grey;
+        border-radius: 20px;
+        width: 400px;
+        height: 350px;
+        vertical-align: top;
+        background-color: rgb(28, 122, 42);
+        box-sizing: border-box;
+        margin-left: 20px;
+        transition: opacity 2s;
+      }
+      .img2:hover {
+        opacity: 0.8;
+        filter: brightness(1.2);
+      }
+      .img2 figure {
+        margin: 0 auto;
+      }
+      .img3 {
+        padding: 15px;
+        display: inline-block;
+        border: 1px solid grey;
+        border-radius: 20px;
+        width: 400px;
+        height: 350px;
+        background-color: rgb(28, 122, 42);
+        box-sizing: border-box;
+        margin-right: 20px;
+        margin-left: 75px;
+        vertical-align: top;
+        transition: opacity 2s;
+      }
+      .img3:hover {
+        opacity: 0.8;
+        filter: brightness(1.2);
+      }
+      .img3 figure {
+        margin: 0 auto;
+      }
+      .img4 {
+        padding: 15px;
+        display: inline-block;
+        border: 1px solid grey;
+        border-radius: 20px;
+        width: 400px;
+        height: 350px;
+        vertical-align: top;
+        background-color: rgb(28, 122, 42);
+        box-sizing: border-box;
+        margin-left: 20px;
+        transition: opacity 2s;
+      }
+      .img4:hover {
+        opacity: 0.8;
+        filter: brightness(1.2);
+      }
+      .img4 figure {
+        margin: 0 auto;
+      }
+      section:last-of-type {
+        text-align: end center;
+      }
+      .footer_1 {
+        display: block;
+
+        background: #018141;
+        padding: 30px;
+        color: hsla(0, 0%, 100%, 0.8);
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1rem;
+      }
+      .footer_2 {
+        text-align: center;
+        padding: 10px;
+      }
+      .footer_2 img {
+        width: 30px;
+        height: 30px;
+        margin: 10px;
+        transition: 2s;
+      }
+      .footer_2 img:hover {
+        opacity: 0.4;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div style="max-width: 991px; margin: 0 auto">
+          <div class="logo">
+            <img
+              style="width: 120; height: 120px"
+              src="modern-tennis-club-sports-logo-vector.png"
+              alt=""
+            />
+          </div>
+          <div class="links">
+            <a href="TENNIS_SHOP_PROJECT.html">Naslovna</a>
+            <a href="TENNISSHOPONAMA.html">O nama</a>
+            <a href="TENNISSHOPGALLERY.html">Galerija</a>
+            <a href="">Usluge</a>
+            <a href="TENNISHOPKONTAKTI.html">Kontakti</a>
+          </div>
+          <div class="search">
+            <input type="search" placeholder="Pretraži*" id="search_bar" />
+            <button id="button_icon" type="submit">
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div style="max-width: 991px; margin: 0 auto" class="container">
+        <section>
+          <div class="naslov">
+            <h2>Budite dio naše Teniske akademije!</h2>
+          </div>
+        </section>
+        <section>
+          <div class="img1">
+            <figure>
+              <a href=""
+                ><img
+                  src="https://trangnguyensport.com/wp-content/uploads/2020/10/wilson-new-prostaff-2020.jpg"
+                  alt=""
+                  width="370"
+                  height="205"
+                />
+                <figcaption>
+                  <h3>
+                    Federer predstavio novu liniju Wilsonovih Pro Staff reketa.
+                    Od 20.12. dostupno i u našoj trgovini!
+                  </h3>
+                </figcaption></a
+              >
+            </figure>
+          </div>
+          <div class="img2">
+            <figure>
+              <a href=""
+                ><img
+                  src="https://img.olympics.com/images/image/private/t_s_w960/t_s_16_9_g_auto/f_auto/primary/sopglarwc7wtqnlmf4hh"
+                  alt=""
+                  width="370"
+                  height="205"
+                />
+                <figcaption>
+                  <h3>
+                    Današnji mečevi zbog kiše prebačeni za sutrašnji dan! Na
+                    rasporedu su od 13 sati.
+                  </h3>
+                </figcaption></a
+              >
+            </figure>
+          </div>
+        </section>
+        <section style="margin-top: 20px">
+          <div class="img3">
+            <figure>
+              <a href=""
+                ><img
+                  src="https://san-spin.hr/images/sized/images/uploads/skola-tenisa2-527x252.jpg"
+                  alt=""
+                  width="370"
+                  height="205"
+                />
+                <figcaption>
+                  <h3>
+                    Škola tenisa za najmlađe. Svakim danom od 10 do 18 sati.
+                  </h3>
+                </figcaption></a
+              >
+            </figure>
+          </div>
+          <div class="img4">
+            <figure>
+              <a href=""
+                ><img
+                  src="https://tennisgyan.com/wp-content/uploads/2023/03/Racquet-Restringing-Types-of-Strings.jpg"
+                  alt=""
+                  width="370"
+                  height="205"
+                />
+                <figcaption>
+                  <h3>Našpanajte reket kod našeg majstora Ivana.</h3>
+                </figcaption></a
+              >
+            </figure>
+          </div>
+        </section>
+        <section style="margin-top: 20px">
+          <div class="img3">
+            <figure>
+              <a href=""
+                ><img
+                  src="https://plaidracquet.com/cdn/shop/files/20220428_175359_1500x.jpg?v=1652108371"
+                  alt=""
+                  width="370"
+                  height="205"
+                />
+                <figcaption>
+                  <h3>
+                    Za ovogodišnje blagdane čeka vas veliki popusti na čitav
+                    teniski asortiman u našem shopu!
+                  </h3>
+                </figcaption></a
+              >
+            </figure>
+          </div>
+          <div class="img4">
+            <figure>
+              <a href=""
+                ><img
+                  src="https://www.sibenik.in/upload/clanci/2023/09/2023-09-12/177905//17651896042265483873759208454403506643069102n.jpg"
+                  alt=""
+                  width="370"
+                  height="205"
+                />
+                <figcaption>
+                  <h3>Šibenik domaćin turnira ATP 250 u travnju 2024.</h3>
+                </figcaption></a
+              >
+            </figure>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footer_2">
+        <a href="" target="_blank"
+          ><img src="facebook-color-svgrepo-com (1).svg" alt=""
+        /></a>
+
+        <a href="" target="_blank"
+          ><img src="instagram-1-svgrepo-com.svg" alt=""
+        /></a>
+        <a href="" target="_blank"
+          ><img src="twitter-color-svgrepo-com.svg" alt=""
+        /></a>
+        <a href="" target="_blank"
+          ><img src="youtube-color-svgrepo-com.svg" alt=""
+        /></a>
+      </div>
+      <div class="footer_1">All rights reserved.© 2023</div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

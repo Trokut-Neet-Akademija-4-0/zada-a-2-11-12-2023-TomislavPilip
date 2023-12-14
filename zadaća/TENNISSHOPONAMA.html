@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O nama</title>
+    <style>
+      h1 {
+        text-align: center;
+        font-weight: 900;
+      }
+      main {
+        font-family: JosefinSans;
+      }
+      section p::first-letter {
+        font-size: x-large;
+      }
+
+      @font-face {
+        font-family: JosefinSans;
+        src: url(JosefinSans-Regular.ttf);
+      }
+      header {
+        height: 110px;
+        background-color: rgb(8, 8, 82);
+      }
+      .logo,
+      .links,
+      .search {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .logo {
+        max-width: 180px;
+        margin-left: 10px;
+      }
+      .links {
+        max-width: 600px;
+        padding-top: 40px;
+        padding-right: 60px;
+        padding-bottom: 50px;
+        padding-left: 60px;
+        margin-right: 20px;
+      }
+      .search {
+        margin-bottom: 10px;
+        background-color: rgb(13, 13, 65);
+      }
+      header a {
+        color: white;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+        border-right: 1px solid white;
+        transition: 1.5s;
+        font-family: JosefinSans;
+        font-size: 18px;
+      }
+      header a:hover {
+        color: yellow;
+        cursor: pointer;
+      }
+      #search_bar {
+        padding: 15px;
+        border-radius: 20px;
+        margin-right: -38px;
+        transition: 1.5s;
+      }
+      #search_bar:hover {
+        background-color: yellow;
+      }
+      #button_icon {
+        padding: 10px;
+        border-radius: 20px;
+        margin-right: 20px;
+        border: none;
+        color: black;
+        background-color: white;
+        transition: 1.5s;
+      }
+      #button_icon:hover {
+        cursor: pointer;
+        color: rgb(170, 170, 11);
+      }
+      footer {
+        background-color: rgb(8, 8, 82);
+        height: 150px;
+        margin-top: 20px;
+        box-sizing: border-box;
+      }
+      .footer_1 {
+        background: #018141;
+        padding: 30px;
+        color: hsla(0, 0%, 100%, 0.8);
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1rem;
+      }
+      .footer_2 {
+        text-align: center;
+        padding: 10px;
+      }
+      .footer_2 img {
+        width: 30px;
+        height: 30px;
+        margin: 10px;
+        transition: opacity 2s;
+      }
+      .footer_2 img:hover {
+        opacity: 0.4;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div style="max-width: 991px; margin: 0 auto">
+          <div class="logo">
+            <img
+              style="width: 120; height: 120px"
+              src="modern-tennis-club-sports-logo-vector.png"
+              alt=""
+            />
+          </div>
+          <div class="links">
+            <a href="TENNIS_SHOP_PROJECT.html">Naslovna</a>
+            <a href="TENNISSHOPONAMA.html">O nama</a>
+            <a href="TENNISSHOPGALLERY.html">Galerija</a>
+            <a href="">Usluge</a>
+            <a href="TENNISHOPKONTAKTI.html">Kontakti</a>
+          </div>
+          <div class="search">
+            <input type="search" placeholder="Pretraži*" id="search_bar" />
+            <button id="button_icon" type="submit">
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1>Teniska akademija</h1>
+      <br />
+      <div style="max-width: 991px; margin: 0 auto" class="container">
+        <section>
+          <h2>Naša Priča</h2>
+          <p>
+            Dobrodošli u Tenisku akademiju, vašu destinaciju za sva pitanja u
+            vezi "bijelog sporta"! Osnovani smo 2005. godine s ciljem pružanja
+            usluge iznajmljivanja vrhunskih teniskih terena, prodaje i
+            servisiranja teniske opreme te treninge s našim iskusnim terenerima.
+          </p>
+
+          <h2>Naša Misija</h2>
+          <p>
+            U Teniskoj Akademiji, naša misija je inspirirati i podržati
+            ljubitelje tenisa svih uzrasta te privući nove ljude. Želimo
+            ponuditi odabrani asortiman najbolje opreme za tenis, uz stručne
+            savjete i iznimnu korisničku podršku. Jednom kada posjetite Tenisku
+            akademiju poželjet ćete se vratiti.
+          </p>
+
+          <h2>Zašto Izabrati Nas?</h2>
+          <p>
+            1. Kvalitetni Proizvodi: Pažljivo biramo najbolje proizvode od
+            renomiranih brendova kako bismo osigurali vrhunsku kvalitetu.
+          </p>
+          <p>
+            2. Stručno Vodstvo: Naše stručno osoblje ovdje je da vam pomogne s
+            preporukama proizvoda, uslugama terena i treninga te odgovori na sva
+            pitanja vezana uz tenis.
+          </p>
+          <p>
+            3. Zadovoljstvo klijenata: vaše zadovoljstvo naša je prioritet.
+            Trudimo se učiniti vaše iskustvo u Teniskoj akademiji jednostavnim i
+            ugodnim.
+          </p>
+
+          <h2>Kontaktirajte Nas</h2>
+          <p>
+            Imate pitanja ili povratne informacije? Obratite nam se na
+            info@teniskaakademija.hr ili nazovite na [broj telefona]. Cijenimo
+            vaše mišljenje i veselimo se vašem javljanju!
+          </p>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footer_2">
+        <a href="" target="_blank"
+          ><img src="facebook-color-svgrepo-com (1).svg" alt=""
+        /></a>
+
+        <a href="" target="_blank"
+          ><img src="instagram-1-svgrepo-com.svg" alt=""
+        /></a>
+        <a href="" target="_blank"
+          ><img src="twitter-color-svgrepo-com.svg" alt=""
+        /></a>
+        <a href="" target="_blank"
+          ><img src="youtube-color-svgrepo-com.svg" alt=""
+        /></a>
+      </div>
+      <div class="footer_1">All rights reserved.© 2023</div>
+    </footer>
+  </body>
+</html>
